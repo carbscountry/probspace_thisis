@@ -28,5 +28,6 @@ WORKDIR ${work_dir}
 #install python & pip
 RUN apt install -y python3-pip && \
      pip install poetry \
-     pip install -y protobuf
+     pip install -y protobuf \
+     ipywidgets
 
