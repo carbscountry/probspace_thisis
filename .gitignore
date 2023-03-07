@@ -1,3 +1,4 @@
 #dataフォルダの反映のしない
 /data/*
 /output/*
+*/.ipynb_checkpoints
