@@ -11,6 +11,8 @@ probspaceで開催されている研究論文の採択予測こんぺ
 
 #### 1. 下記コマンドでビルドとコンテナ起動を行う
 ```
+$ root@aa1519d1a400:/workspace# apt install docker
+$ root@aa1519d1a400:/workspace# sudo chmod 666 /var/run/docker.sock
 $ docker-compose up -d app
 ```
 

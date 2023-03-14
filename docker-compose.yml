@@ -9,6 +9,13 @@ services:
     working_dir: '/workspace'
     volumes:
       - ./:/workspace/
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
     ports:
       - "127.0.0.1:8081:8888"
     tty: true
