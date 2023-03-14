@@ -1,5 +1,5 @@
 
-FROM nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu20.04
+FROM nvidia/cuda:12.0.0-cudnn8-runtime-ubuntu22.04
 
 ENV TZ=Asia/Tokyo
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
@@ -28,6 +28,6 @@ WORKDIR ${work_dir}
 #install python & pip
 RUN apt install -y python3-pip && \
      pip install poetry \
-     pip install -y protobuf \
+     pip install  protobuf \
      ipywidgets
 
