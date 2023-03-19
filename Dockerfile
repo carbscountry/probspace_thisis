@@ -26,8 +26,6 @@ RUN apt-get update -y \
 WORKDIR ${work_dir}
 
 #install python & pip
-RUN apt install -y python3-pip && \
-     pip install poetry \
-     pip install  protobuf \
-     ipywidgets
+RUN apt install -y python3.10.9 && \
+     pip install poetry 
 
