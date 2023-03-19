@@ -6,7 +6,7 @@ authors = ["masaki"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10.6"
+python = "^3.10.9"
 torch = "^1.13.1"
 polars = "^0.16.13"
 transformers = "^4.26.1"
