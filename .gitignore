@@ -1,4 +1,5 @@
 #dataフォルダの反映のしない
+*.csv
 /data/*
 /output/*
 .ipynb_checkpoints/*
