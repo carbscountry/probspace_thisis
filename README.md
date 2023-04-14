@@ -20,8 +20,8 @@ $ docker-compose up -d app
 ```
 $ docker-compose exec  app /bin/bash
 
-root@aa1519d1a400:/workspace# poetry lock
-root@aa1519d1a400:/workspace# poetry install
+root@aa1519d1a400:/workspace# pip3 install --upgrade pip
+root@aa1519d1a400:/workspace# pip3 install -U requirements.txt
 ```
 
 #### 3. jupyter を起動
