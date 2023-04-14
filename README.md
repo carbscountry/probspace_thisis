@@ -26,7 +26,7 @@ root@aa1519d1a400:/workspace# pip3 install -U requirements.txt
 
 #### 3. jupyter を起動
 ```
-root@aa1519d1a400:/workspace#poetry run jupyter lab --allow-root --no-browser --NotebookApp.token='' --port 8888 --ip=0.0.0.0
+root@aa1519d1a400:/workspace# jupyter lab --allow-root --no-browser --NotebookApp.token='' --port 8888 --ip=0.0.0.0
 ```
 #### 4.http://localhost:8081/ にアクセス
 
