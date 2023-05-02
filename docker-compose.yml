@@ -1,14 +1,21 @@
-version: '3'
+version: '3.2'
 services:
   app:
     build: .
       # dockerfile: Dockerfile
     container_name: 'probspace'
-    devices:
-      - /dev/nvidia0
+    # devices:
+    #   - /dev/nvidia0
     working_dir: '/workspace'
     volumes:
       - ./:/workspace/
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
     ports:
       - "127.0.0.1:8080:8888"
     tty: true
